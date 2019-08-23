@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.front-page {
+	background-color: #c9e4fe;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	height:100vh;
+	width:100%;
+	z-index: -1;
+}
+
+#trapezoid {
+	position: absolute;
+	right: 0;
+	border-top-width: 100vh;
+    border-top-style: solid;
+	border-top-color: #3f5bae;
+    border-left: 100px solid transparent;
+    top: 0;
+    width: 35%;
+}
+
+#logo {
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	height: 5em;
+	width: 5.5em;
+}
+
+.front-page ul.nav-bar {
+	position: absolute;
+	top: 80px;
+	right: 80px;
+	z-index: 1;
+	list-style-type: none;
+	text-align: right;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+.front-page ul.nav-bar li{
+	margin: 0 0 10px 0;
+}
+
+.front-page ul.nav-bar li a{
+	color: #c9e4fe;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.front-page .vertical-bar {
+	position: absolute;
+	right: 40px;
+	width: 10px;
+	top: 100px;
+	height: 150px;
+	background-color: #c9e4fe;
+	z-index: 1;
+}
+
+.front-page .bird1 .birdie {
+	position: absolute;
+	right: 44%;
+	top: 70px;
+	height: 200px;
+	width: 180px;
+	-ms-transform: rotate(-40deg); /* IE 9 */
+  	-webkit-transform: rotate(-40deg); /* Safari 3-8 */
+  	transform: rotate(-40deg);
+}
+
+.front-page .bird2 .birdie {
+	position: absolute;
+	right: 27%;
+	top: 300px;
+	height: 200px;
+	width: 180px;
+	-ms-transform: rotate(-20deg); /* IE 9 */
+  	-webkit-transform: rotate(-20deg); /* Safari 3-8 */
+  	transform: rotate(-20deg);
+}
+
+@media only screen and (max-width: 600px) {
+ <!--FOR PHONES-->
+}
