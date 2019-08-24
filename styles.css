@@ -12,12 +12,24 @@
 	z-index: -1;
 }
 
+.front-page .front-page-pics {
+	position: absolute;
+	height: 1100px;
+	width: 1700px;
+	z-index: -1;
+	top: -100px;
+	left: -500px;
+	bottom: 0;
+	right: 0;
+
+}
+
 #trapezoid {
 	position: absolute;
 	right: 0;
-	border-top-width: 100vh;
-    border-top-style: solid;
-	border-top-color: #3f5bae;
+	border-bottom-width: 100vh;
+    border-bottom-style: solid;
+	border-bottom-color: #3f5bae;
     border-left: 200px solid transparent;
     top: 0;
     width: 35%;
@@ -33,8 +45,8 @@
 
 .front-page ul.nav-bar {
 	position: absolute;
-	top: 80px;
-	right: 80px;
+	top: 65px;
+	right: 4.2vw;
 	z-index: 1;
 	list-style-type: none;
 	text-align: right;
@@ -42,124 +54,112 @@
 }
 
 .front-page ul.nav-bar li{
-	margin: 0 0 10px 0;
+	margin: 0 0 1vw 0;
 }
 
 .front-page ul.nav-bar li a{
 	color: #c9e4fe;
 	text-decoration: none;
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 1.55vw;
 }
 
 .front-page .vertical-bar {
 	position: absolute;
-	right: 40px;
+	right: 2.5vw;
 	width: 10px;
-	top: 100px;
-	height: 150px;
+	top: 85px;
+	height: 10vw;
 	background-color: #c9e4fe;
 	z-index: 1;
 }
 
-.front-page .bird1 .birdie {
-	position: absolute;
-	right: 45%;
-	top: 10vh;
-	height: 200px;
-	width: 180px;
-	-ms-transform: rotate(-20deg); /* IE 9 */
-  	-webkit-transform: rotate(-20deg); /* Safari 3-8 */
-  	transform: rotate(-20deg);
-}
-
-.front-page .bird2 .birdie {
-	position: absolute;
-	right: 30%;
-	top: 22vh;
-	height: 200px;
-	width: 180px;
-	-ms-transform: rotate(-40deg); /* IE 9 */
-  	-webkit-transform: rotate(-40deg); /* Safari 3-8 */
-  	transform: rotate(-40deg);
-}
-
-.front-page .bird3 .birdie {
-	position: absolute;
-	right: 18%;
-	top: 33vh;
-	height: 200px;
-	width: 180px;
-	-ms-transform: rotate(-10deg); /* IE 9 */
-  	-webkit-transform: rotate(-10deg); /* Safari 3-8 */
-  	transform: rotate(-10deg);
-}
-
-.front-page .bird4 .birdie {
-	position: absolute;
-	right: 10%;
-	top: 55vh;
-	height: 300px;
-	width: 270px;
-}
-
 .front-page h2 {
 	position: absolute;
-	bottom: 20vh;
+	bottom: 22vh;
 	z-index: 2;
-	left: 5vh;
+	right: 2.5vw;
 	font-family: 'Lexend Deca', sans-serif;
-	font-size: 60px;
-	color: #3f5bae;
-	font-weight: bold;
-}
-
-.front-page h1 {
-	z-index: 2;
-	position: absolute;
-	bottom: 9vh;
-	left: 5vh;
-	font-family: 'Lexend Deca', sans-serif;
-	font-size: 96px;
-	color: #3f5bae;
+	font-size: 2.75vw;
+	color: #c9e4fe;
 	font-weight: bold;
 }
 
 .front-page .underline{
+	position: relative;
+	left: 35%;
+	z-index: 1;
+	top: 77vh;
+	border-bottom: 7vw solid #feeb10;
+    border-left: 50px solid transparent;
+	width: 60%;
+}
+
+.front-page .underline h1{
 	position: absolute;
-	left: 5vh;
-	border-bottom-width: 6vh;
-    border-bottom-style: solid;
-	border-bottom-color: #feeb10;
-    border-right: 50px solid transparent;
-    bottom: 15vh;
-    width: 25%;
+	top: -4.5vw;
+	right: 2vw;
+	color: #3f5bae;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 6vw;
 }
 
 .about-page {
 	
 }
 
-@media only screen and (max-width: 680px) {
- <!--FOR PHONES-->
- 
- 	.front-page .bird1 .birdie {
-		height: 0px;
-		width: 0px;
+@media only screen and (max-width: 900px) {
+	/*FOR PHONES (AND TABLETS ??)*/
+	.front-page ul.nav-bar {
+		position: absolute;
+		top: 65px;
+		right: 6vw;
+		z-index: 1;
+		list-style-type: none;
+		text-align: right;
+		font-family: 'Lexend Deca', sans-serif;
 	}
-	
-	.front-page .bird2 .birdie {
-		height: 0px;
-		width: 0px;
-	}
-	
-	.front-page .bird3 .birdie {
-		height: 0px;
-		width: 0px;
-	}
-	
-	.front-page .bird4 .birdie {
-		height: 0px;
-		width: 0px;
+ 	.front-page ul.nav-bar li a{
+		color: #c9e4fe;
+		text-decoration: none;
+		font-size: 2.9vw;
 	}
 
+	.front-page h2 {
+		position: absolute;
+		bottom: 22vh;
+		z-index: 2;
+		right: 2.5vw;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 3.5vw;
+		color: #c9e4fe;
+		font-weight: bold;
+	} 
+
+	.front-page .underline{
+		position: relative;
+		left: 30%;
+		z-index: 1;
+		top: 77vh;
+		border-bottom: 12vw solid #feeb10;
+		border-left: 50px solid transparent;
+		width: 60%;
+	}
+	.front-page .vertical-bar {
+		position: absolute;
+		right: 2.5vw;
+		width: 10px;
+		top: 85px;
+		height: 17vw;
+		background-color: #c9e4fe;
+		z-index: 1;
+	}
+	.front-page .underline h1{
+		position: absolute;
+		top: -3vw;
+		right: 3vw;
+		color: #3f5bae;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 6vw;
+	}
 }
