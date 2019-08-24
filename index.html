@@ -12,7 +12,47 @@
 
 <div class="front-page">
     <img id="logo" src="images/baddylogoofficial.png">
-    <img class="front-page-pics" src="images/front_page_1.jpg">
+    <img class="pic1" src="images/front_page_1.jpg">
+    <img class="pic2" src="images/front_page_2.jpg">
+    <img class="pic3" src="images/front_page_3.jpg">
+    <button class="w3-button w3-black w3-display-right" onclick="plusIndex()">&#10095;</button>
+
+    <script>
+        var index = 1;
+        showDivs(index);
+
+        function plusIndex(){
+            if(index == 3){
+                index = 1;
+            } else {
+                index += 1;
+            }
+            showDivs(index);
+        }
+
+        function showDivs(n){
+            var x = document.getElementsByClassName("pic1");
+            var y = document.getElementsByClassName("pic2");
+            var z = document.getElementsByClassName("pic3");
+            
+            if(n==1){
+                x[0].style.display = "block";
+                y[0].style.display = "none";
+                z[0].style.display = "none";
+            } else if (n==2){
+                x[0].style.display = "none";
+                y[0].style.display = "block";
+                z[0].style.display = "none";
+            } else {
+                x[0].style.display = "none";
+                y[0].style.display = "none";
+                z[0].style.display = "block";
+            }
+            
+        }
+    </script>
+
+
     <ul class="nav-bar">
     	<li><a href="#smth">NEWS</a></li>
         <li><a href="#smth">CONTACT</a></li>
