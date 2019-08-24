@@ -28,11 +28,11 @@
 	position: absolute;
 	right: 0;
 	border-bottom-width: 100vh;
-    border-bottom-style: solid;
+	border-bottom-style: solid;
 	border-bottom-color: #3f5bae;
-    border-left: 200px solid transparent;
-    top: 0;
-    width: 35%;
+	border-left: 200px solid transparent;
+	top: 0;
+	width: 35%;
 }
 
 #logo {
