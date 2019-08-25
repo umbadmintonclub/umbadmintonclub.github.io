@@ -5,7 +5,6 @@
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
 
@@ -15,31 +14,27 @@
     <img class="pic1" src="images/front_page_1.jpg">
     <img class="pic2" src="images/front_page_2.jpg">
     <img class="pic3" src="images/front_page_3.jpg">
-    <button class="w3-button w3-black w3-display-right" onclick="plusIndex()">&#10095;</button>
 
     <script>
         var index = 1;
-        showDivs(index);
+        showDivs();
 
-        function plusIndex(){
-            if(index == 3){
+        function showDivs(){
+            var x = document.getElementsByClassName("pic1");
+            var y = document.getElementsByClassName("pic2");
+            var z = document.getElementsByClassName("pic3");
+
+            if(index >= 3){
                 index = 1;
             } else {
                 index += 1;
             }
-            showDivs(index);
-        }
-
-        function showDivs(n){
-            var x = document.getElementsByClassName("pic1");
-            var y = document.getElementsByClassName("pic2");
-            var z = document.getElementsByClassName("pic3");
             
-            if(n==1){
+            if(index==1){
                 x[0].style.display = "block";
                 y[0].style.display = "none";
                 z[0].style.display = "none";
-            } else if (n==2){
+            } else if (index==2){
                 x[0].style.display = "none";
                 y[0].style.display = "block";
                 z[0].style.display = "none";
@@ -48,7 +43,7 @@
                 y[0].style.display = "none";
                 z[0].style.display = "block";
             }
-            
+            setTimeout(showDivs, 2000);
         }
     </script>
 
@@ -69,9 +64,19 @@
 
 </div>
 
-<div class="about-page">
-</div>
 
+<div class="transition">
+    <div>TO THE VICTORS VALIANT</div>
+    <br> <br>
+    <div>TO THE CONQUERING HEROES</div> 
+    <br> <br>
+    <div class="mich">TO MICHIGAN</div>
+    <br> <br>
+    <div class="champions">THE CHAMPIONS OF THE WEST</div>
+</div>
+<div class="about-page"> 
+    ABOUT
+</div>
 
 </body>
 </html>
