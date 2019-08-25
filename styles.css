@@ -15,7 +15,7 @@
 .front-page .pic1{
 	position: fixed;
 	height: 900px;
-	width: 1300px;
+	width: 1200px;
 	z-index: -1;
 	bottom: 0;
 	left: -100px;
@@ -41,13 +41,14 @@
 
 #trapezoid {
 	position: absolute;
-	right: 0;
-	border-bottom-width: 100vh;
+	right: -10px;
+	border-bottom-width: 500vh;
     border-bottom-style: solid;
 	border-bottom-color: #3f5bae;
-    border-left: 200px solid transparent;
+    border-left: 100vw solid transparent;
     top: 0;
-    width: 35%;
+	width: 40%;
+	margin: 0;
 }
 
 #logo {
@@ -61,7 +62,7 @@
 .front-page ul.nav-bar {
 	position: absolute;
 	top: 65px;
-	right: 4.2vw;
+	right: 4.5vw;
 	z-index: 1;
 	list-style-type: none;
 	text-align: right;
@@ -69,7 +70,7 @@
 }
 
 .front-page ul.nav-bar li{
-	margin: 0 0 1vw 0;
+	margin: 0 0 0.7vw 0;
 }
 
 .front-page ul.nav-bar li a{
@@ -119,10 +120,40 @@
 	font-size: 6vw;
 }
 
-.about-page {
-	
+.transition {
+	position: absolute;
+	text-align: right;
+	right: 5vw;
+	top: 200vh;
+	font-size: 4vw;
+	color: #c9e4fe;
+	font-family: 'Lexend Deca', sans-serif;
+	animation-name: fadeIn;
+	animation-duration: 5s;
 }
 
+.transition .mich {
+	color: #feeb10;
+}
+
+.about-page {
+	position: absolute;
+	left: 5vw;
+	top: 400vh;
+	font-size: 10vw;
+	color: #c9e4fe;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 @media only screen and (max-width: 900px) {
 	/*FOR PHONES (AND TABLETS ??)*/
 	.front-page ul.nav-bar {
@@ -158,7 +189,7 @@
 		top: 77vh;
 		border-bottom: 12vw solid #feeb10;
 		border-left: 50px solid transparent;
-		width: 60%;
+		width: 62%;
 	}
 	.front-page .vertical-bar {
 		position: absolute;
@@ -171,7 +202,7 @@
 	}
 	.front-page .underline h1{
 		position: absolute;
-		top: -3vw;
+		top: -2.5vw;
 		right: 3vw;
 		color: #3f5bae;
 		font-family: 'Lexend Deca', sans-serif;
