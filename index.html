@@ -5,6 +5,7 @@
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -54,7 +55,6 @@
         <li><a href="#smth">SPONSORS</a></li>
         <li><a href="#smth">TOURNAMENTS</a></li>
     </ul>
-    <div class="vertical-bar"></div>
 	<div id="trapezoid">
     </div>
     <h2>UNIVERSITY OF MICHIGAN</h2>
@@ -66,17 +66,38 @@
 
 
 <div class="transition">
-    <div>TO THE VICTORS VALIANT</div>
-    <br> <br>
-    <div>TO THE CONQUERING HEROES</div> 
-    <br> <br>
-    <div class="mich">TO MICHIGAN</div>
-    <br> <br>
-    <div class="champions">THE CHAMPIONS OF THE WEST</div>
+    <div data-aos="fade-right" 
+    data-aos-offset="100"
+    data-aos-duration="3000"
+    class="victors">
+    TO THE VICTORS VALIANT
+    </div>
+    <div class="heroes"
+    data-aos="fade-right" 
+    data-aos-offset="100"
+    data-aos-duration="3000">
+    TO THE CONQUERING HEROES
+    </div> 
+    <div class="mich"
+    data-aos="fade-right" 
+    data-aos-offset="100"
+    data-aos-duration="3000">
+    TO MICHIGAN
+    </div>
+    <div class="champions"
+    data-aos="fade-right" 
+    data-aos-offset="100"
+    data-aos-duration="3000">
+    THE CHAMPIONS OF THE WEST
+    </div>
 </div>
 <div class="about-page"> 
-    ABOUT
 </div>
 
+<footer></footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
