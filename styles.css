@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+body { margin: 0;}
+
 .front-page {
 	background-color: #c9e4fe;
 	position: absolute;
@@ -62,7 +64,7 @@
 .front-page ul.nav-bar {
 	position: absolute;
 	top: 65px;
-	right: 4.5vw;
+	right: 3vw;
 	z-index: 1;
 	list-style-type: none;
 	text-align: right;
@@ -76,8 +78,13 @@
 .front-page ul.nav-bar li a{
 	color: #c9e4fe;
 	text-decoration: none;
-	/*font-size: 24px;*/
 	font-size: 1.55vw;
+	padding-right: 1vw;
+}
+
+.front-page ul.nav-bar li a:hover{
+	color: #feeb10;
+	border-right: 5px solid #feeb10;
 }
 
 .front-page .vertical-bar {
@@ -121,39 +128,48 @@
 }
 
 .transition {
-	position: absolute;
-	text-align: right;
-	right: 5vw;
-	top: 200vh;
-	font-size: 4vw;
+	text-align: left;
+	font-size: 2vw;
 	color: #c9e4fe;
 	font-family: 'Lexend Deca', sans-serif;
-	animation-name: fadeIn;
-	animation-duration: 5s;
+}
+
+.transition .victors {
+	position: absolute;
+	top: 130vh;
+	left: 60vw;
+
+}
+
+.transition .heroes {
+	position: absolute;
+	top: 160vh;
+	left: 55vw;
 }
 
 .transition .mich {
+	position: absolute;
+	top: 190vh;
+	left: 50vw;
 	color: #feeb10;
 }
 
-.about-page {
+.transition .champions {
 	position: absolute;
-	left: 5vw;
-	top: 400vh;
-	font-size: 10vw;
-	color: #c9e4fe;
-	font-family: 'Lexend Deca', sans-serif;
+	top: 220vh;
+	left: 45vw;
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+.about-page {
+	
 }
+
+.footer {
+	
+
+
+}
+
 @media only screen and (max-width: 900px) {
 	/*FOR PHONES (AND TABLETS ??)*/
 	.front-page ul.nav-bar {
