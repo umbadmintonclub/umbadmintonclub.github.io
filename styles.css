@@ -8,13 +8,12 @@ body { margin: 0;}
 	width:100vw;
 }
 
-
-.front-page .pic{
+.front-page .pic1, .pic2, .pic3{
 	position: fixed;
 	object-fit: cover;
 	height: 100vh;
 	width: 60vw;
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 #trapezoid {
@@ -29,29 +28,26 @@ body { margin: 0;}
 	margin: 0;
 }
 
-#logo {
+.front-page a .logo {
 	position: absolute;
 	left: 60px;
 	top: 80px;
 	height: 5em;
 	width: 5.5em;
-	padding-bottom: 1vh;
+	padding-bottom: 2vh;
+	z-index: 2;
 }
 
-#logo:hover {
+.front-page a .logo:hover {
 	border-bottom: 5px solid #feeb10;
 }
 
-.front-page .test:hover {
-	color: white;
-	background-color: black;
-}
 
 .front-page ul.nav-bar {
 	position: absolute;
 	top: 65px;
 	right: 3vw;
-	z-index: 1;
+	z-index: 3;
 	list-style-type: none;
 	text-align: right;
 	font-family: 'Lexend Deca', sans-serif;
@@ -76,7 +72,7 @@ body { margin: 0;}
 .front-page h2 {
 	position: absolute;
 	bottom: 22vh;
-	z-index: 1;
+	z-index: 3;
 	right: 2.5vw;
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 2.75vw;
@@ -87,7 +83,7 @@ body { margin: 0;}
 .front-page .underline{
 	position: relative;
 	left: 35%;
-	z-index: 1;
+	z-index: 3;
 	top: 77vh;
 	border-bottom: 7vw solid #feeb10;
     border-left: 50px solid transparent;
@@ -155,7 +151,7 @@ body { margin: 0;}
 
 @media only screen 
 and (max-width: 992px) 
-and (min-width: 600px){
+and (min-width: 620px){
 	/*FOR PHONES (AND TABLETS ??)*/
 	.front-page ul.nav-bar {
 		position: absolute;
@@ -219,13 +215,16 @@ and (min-width: 600px){
 	}
 	.front-page .underline{
 		position: relative;
-		left: 35%;
+		left: 33%;
 		z-index: 1;
 		top: 77vh;
 		border-bottom: 12vw solid #feeb10;
 		border-left: 50px solid transparent;
 		width: 55%;
 	}
+	.front-page h2 {
+		right: 5vw;		
+	} 
 	.front-page .underline h1{
 		position: absolute;
 		top: -1.5vw;
