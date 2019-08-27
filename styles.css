@@ -3,47 +3,23 @@
 body { margin: 0;}
 
 .front-page {
-	background-color: #c9e4fe;
-	position: absolute;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
+	position: relative;
 	height:100vh;
-	width:100%;
-	z-index: -1;
+	width:100vw;
 }
 
-.front-page .pic1{
-	position: fixed;
-	height: 900px;
-	width: 1200px;
-	z-index: -1;
-	bottom: 0;
-	left: -100px;
-}
 
-.front-page .pic2{
+.front-page .pic{
 	position: fixed;
-	height: 1100px;
-	width: 1000px;
+	object-fit: cover;
+	height: 100vh;
+	width: 60vw;
 	z-index: -1;
-	bottom: -150px;
-	left: 0px;
-}
-
-.front-page .pic3{
-	position: fixed;
-	height: 1800px;
-	width: 1000px;
-	z-index: -1;
-	bottom: -500px;
-	left: -50px;
 }
 
 #trapezoid {
 	position: absolute;
-	right: -10px;
+	right: 0;
 	border-bottom-width: 500vh;
     border-bottom-style: solid;
 	border-bottom-color: #3f5bae;
@@ -59,6 +35,16 @@ body { margin: 0;}
 	top: 80px;
 	height: 5em;
 	width: 5.5em;
+	padding-bottom: 1vh;
+}
+
+#logo:hover {
+	border-bottom: 5px solid #feeb10;
+}
+
+.front-page .test:hover {
+	color: white;
+	background-color: black;
 }
 
 .front-page ul.nav-bar {
@@ -87,20 +73,10 @@ body { margin: 0;}
 	border-right: 5px solid #feeb10;
 }
 
-.front-page .vertical-bar {
-	position: absolute;
-	right: 2.5vw;
-	width: 10px;
-	top: 85px;
-	height: 10vw;
-	background-color: #c9e4fe;
-	z-index: 1;
-}
-
 .front-page h2 {
 	position: absolute;
 	bottom: 22vh;
-	z-index: 2;
+	z-index: 1;
 	right: 2.5vw;
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 2.75vw;
@@ -128,6 +104,9 @@ body { margin: 0;}
 }
 
 .transition {
+	position: relative;
+	height: 200vh;
+	width: 100vw;
 	text-align: left;
 	font-size: 2vw;
 	color: #c9e4fe;
@@ -136,41 +115,47 @@ body { margin: 0;}
 
 .transition .victors {
 	position: absolute;
-	top: 130vh;
+	top: 50vh;
 	left: 60vw;
 
 }
 
 .transition .heroes {
 	position: absolute;
-	top: 160vh;
+	top: 80vh;
 	left: 55vw;
 }
 
 .transition .mich {
 	position: absolute;
-	top: 190vh;
+	top: 110vh;
 	left: 50vw;
 	color: #feeb10;
 }
 
 .transition .champions {
 	position: absolute;
-	top: 220vh;
+	top: 140vh;
 	left: 45vw;
 }
 
 .about-page {
-	
+	position: relative;
+	width: 100vw;
+	height: 500vh;
+	background-color: green;
 }
 
 .footer {
-	
-
-
+	position: relative;
+	width: 100vw;
+	height: 30vh;
+	background-color: purple;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen 
+and (max-width: 992px) 
+and (min-width: 600px){
 	/*FOR PHONES (AND TABLETS ??)*/
 	.front-page ul.nav-bar {
 		position: absolute;
@@ -223,5 +208,30 @@ body { margin: 0;}
 		color: #3f5bae;
 		font-family: 'Lexend Deca', sans-serif;
 		font-size: 6vw;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.front-page ul.nav-bar li a{
+		color: #c9e4fe;
+		text-decoration: none;
+		font-size: 3.5vw;
+	}
+	.front-page .underline{
+		position: relative;
+		left: 35%;
+		z-index: 1;
+		top: 77vh;
+		border-bottom: 12vw solid #feeb10;
+		border-left: 50px solid transparent;
+		width: 55%;
+	}
+	.front-page .underline h1{
+		position: absolute;
+		top: -1.5vw;
+		right: 3vw;
+		color: #3f5bae;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 5vw;
 	}
 }
