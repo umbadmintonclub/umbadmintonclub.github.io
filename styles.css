@@ -1,0 +1,291 @@
+#home, #updates, #tournaments {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Style the top navigation bar */
+.nav-bar {
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+}
+  
+/* Style the topnav links */
+.nav-bar a {
+    float: right;
+    font-size: 24px;
+    color: #00274C;
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.nav-bar a:hover {
+    background-color: #00274C;
+    color: white;
+}
+
+#home a .logo, #updates a .logo, #tournaments a .logo {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+	top: 30px;
+    width: 60px;
+    height: 55px;
+}
+
+/* home */
+/* row 1 */
+#home .row1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#home .row1 .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFCB05;
+    opacity: 0.1;
+}
+
+#home .row1 img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#home .row1 .left {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    position: absolute;
+    left: 5vw;
+    top: 45vh;
+}
+
+#home .row1 .right {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 5vw;
+    top: 45vh;
+}
+
+#home .row1 .left:hover, #home .row1 .right:hover {
+    background-color: #FFCB05;
+}
+
+#home .row1 h1{
+    position: absolute;
+    font-size: 60px;
+    right: 5vw;
+    bottom: 10vh;
+    margin: 0;
+    color: #00274C;
+}
+
+/* row 2 */
+
+#home .row2 {
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+}
+
+#home .row2 h1 {
+    position: absolute;
+    font-size: 60px;
+    margin: 0;
+    color: #FFCB05;
+    left: 10vw;
+    top: 10vh;
+}
+
+#home .row2 p {
+    font-size: 24px;
+    margin: 0;
+    color: #FFCB05;
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+    right: 10vw;
+}
+
+/* parallax */
+#home .parallax {
+    /* The image used */
+    background-image: url("images/team1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* footer */
+
+#home .footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #00274C;
+    display: flex;
+}
+
+#home .footer .email,  #home .footer .social{
+    font-size: 36px;
+    color: white;
+}
+
+#home .footer > .email, #home .footer > .social {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50vw;
+    text-align: center;
+}
+
+#home .footer .email input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+#home .footer .email input[type=submit] {
+    width: 75%;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#home .footer .email input[type=submit]:hover {
+    background-color: transparent;
+    border: 2px solid #FFCB05;
+    color: #FFCB05;
+}
+  
+#home .footer .social .fb {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#home .footer .social .fb:hover{
+    color: #FFCB05;
+}
+
+/* updates */
+#updates .title{
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    font-size: 96px;
+    text-align: center;
+    color: #00274C;
+    padding-top: 100px;
+}
+
+#updates .blog {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#updates .blog .blog-entries {
+    position: absolute;
+    width: 75vw;
+    height: 300px;
+}
+
+#updates .blog .blog-entries .blog-entry {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: #00274C;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#updates .blog .blog-entries .blog-entry h4{
+    font-size: 24px;
+}
+
+#updates .blog .blog-entries .blog-entry p {
+    font-size: 18px;
+}
+
+#updates .blog .blog-entries .blog-entry h2{
+    font-size: 36px;
+}
+/* tournaments */
+
+
+
+/* phones and tablets*/
+@media only screen 
+    and (max-width: 992px) {
+        .nav-bar a {
+            font-size: 18px;
+            padding: 15px 25px 15px 25px;
+        }
+
+        #home .row1 h1{
+            font-size: 30px;
+        }
+
+        #home .row2 h1 {
+            font-size: 30px;
+        }
+
+        #home .row2 p {
+            font-size: 18px;
+        }
+
+        #home .footer .email,  #home .footer .social{
+            font-size: 24px;
+        }
+        
+        #home .footer > .email, #home .footer > .social {
+            font-size: 24px;
+        }
+} 
