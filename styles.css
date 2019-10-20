@@ -260,13 +260,37 @@
 /*-------------------- tournaments --------------------*/
 
 
-
 #tournaments .tournament-gallery {
+    height: 450px;
+    width: 100vw;
     background-color: white; 
     font-size: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#tournaments .tournament-gallery .tournament-gallery2 .carousel {
+    align-content: left; 
+    width:50vw;
+    height:450px;
+    float:left;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(71, 70, 66);
+    color: rgb(255, 203, 5);
+}
+
+
+#tournaments .tournament-gallery .tournament-gallery2 .carousel .gallerydescrip{
+    vertical-align: middle;
+}
+
+#tournaments .info_boxes_row {
+    width: 100vw;
+    height: 340px;
+    text-align: center;
+    box-shadow: 0px -2px 30px
+}
 
 
 #tournaments .tournament-row {
@@ -274,11 +298,7 @@
     background-attachment: fixed;
 }
 
-#tournament .galleryrow{
-    background-color: #00274C;
-    color: white; 
-    font-size: 900px;
-}
+
 
 #tournaments .tournament-row .tournament-heading {
     width: 100vw;
@@ -318,16 +338,7 @@
     padding-bottom: 50px;
 }
 
-#tournaments .tournament-gallery .carousel {
-    align-content: left; 
-}
 
-#tournaments .info_boxes_row {
-    width: 100vw;
-    height: 340px;
-    text-align: center;
-    box-shadow: 0px -2px 30px
-}
 
 /* Create three equal columns that floats next to each other */
 #tournaments .info_boxes_row .info_boxes_column {
