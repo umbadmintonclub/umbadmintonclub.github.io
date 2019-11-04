@@ -261,28 +261,62 @@
 
 
 #tournaments .tournament-gallery {
-    height: 450px;
+    height: 400px;
     width: 100vw;
-    background-color: white; 
+    background-color: #00274C; 
     font-size: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+    #tournaments .tournament-gallery {
+        height: 400px;
+        width: 100vw;
+        background-color: #00274C; 
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 #tournaments .tournament-gallery .tournament-gallery2 .carousel {
     align-content: left; 
     width:50vw;
-    height:450px;
+    height:400px;
     float:left;
     font-size: 30px;
     text-align: center;
     vertical-align: middle;
     background-color: rgb(71, 70, 66);
     color: rgb(255, 203, 5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 #tournaments .tournament-gallery .tournament-gallery2 .carousel .gallerydescrip{
     vertical-align: middle;
+}
+
+#tournaments .schedule_row {
+    background-color: rgb(46, 45, 44);
+    color: white;
+    height: 800px;
+    width: 100vw;
+
+}
+
+#tournaments .schedule_row .event {
+    background-color: rgb(71, 70, 66);
+    color: white;
+    height: 500px;
+    width: 100vw;
+    float: left;
+
+}
+
+#tournaments .schedule_row .heading {
+    color: white;
+    
+    
 }
 
 #tournaments .info_boxes_row {
@@ -304,7 +338,7 @@
     width: 100vw;
     height: 200px;
     position: relative;
-    font-size: 96px;
+    font-size: 90px;
     text-align: center;
     color: #00274C;
     padding-top: 100px;
