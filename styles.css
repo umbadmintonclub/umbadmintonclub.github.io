@@ -113,8 +113,8 @@
 
 #home .row2 {
     width: 100vw;
-    height: 80vh;
-    background-color: white;
+    height: 70vh;
+    background-color: #00274C;
     position: relative;
 }
 
@@ -257,7 +257,162 @@
 #updates .blog .blog-entries .blog-entry h2{
     font-size: 36px;
 }
-/* tournaments */
+/*-------------------- tournaments --------------------*/
+
+
+#tournaments .tournament-gallery {
+    height: 400px;
+    width: 100vw;
+    background-color: #00274C; 
+    font-size: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+    #tournaments .tournament-gallery {
+        height: 400px;
+        width: 100vw;
+        background-color: #00274C; 
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+#tournaments .tournament-gallery .tournament-gallery2 .carousel {
+    align-content: left; 
+    width:50vw;
+    height:400px;
+    float:left;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(71, 70, 66);
+    color: rgb(255, 203, 5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#tournaments .tournament-gallery .tournament-gallery2 .carousel .gallerydescrip{
+    vertical-align: middle;
+}
+
+#tournaments .schedule_row {
+    background-color: rgb(46, 45, 44);
+    color: white;
+    height: 800px;
+    width: 100vw;
+
+}
+
+#tournaments .schedule_row .event {
+    background-color: rgb(71, 70, 66);
+    color: white;
+    height: 500px;
+    width: 100vw;
+    float: left;
+
+}
+
+#tournaments .schedule_row .heading {
+    color: white;
+    
+    
+}
+
+#tournaments .info_boxes_row {
+    width: 100vw;
+    height: 340px;
+    text-align: center;
+    box-shadow: 0px -2px 30px
+}
+
+
+#tournaments .tournament-row {
+    background-image: url("images/front_page_2.jpg");
+    background-attachment: fixed;
+}
+
+
+
+#tournaments .tournament-row .tournament-heading {
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    font-size: 90px;
+    text-align: center;
+    color: #00274C;
+    padding-top: 100px;
+}
+
+#tournaments .tournament-row .heading-bg {
+    background-image: url("images/front_page_2.jpg");
+
+    /* blur effect */
+    filter: blur(3px);
+    -webkit-filter:blur(3px);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    height: 100%;
+    width: 50%;
+
+}
+
+#tournaments .tournament_intro {
+    position: relative;
+    font-size: 27px;
+    text-align: center;
+    color: #00274C;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+#tournaments .info_boxes_row .info_boxes_column {
+    float: left;
+    width: 33.33vw;
+    height: 340px;
+    background-color: #00274C;
+    color: white;
+    padding: 15px;
+}
+
+#tournaments .info_boxes_row .info_boxes_column .content {
+    text-align: left; 
+}
+
+#tournaments .info_boxes_row .info_boxes_column .content2 {
+    text-align: left; 
+}
+
+
+/* Clear floats after the columns */
+#tournaments .info_boxes_row .info_boxes_column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+#tournaments .gallery {
+    width: 100vw;
+    text-align: center;
+    font-size: 48px;
+}
+
 
 
 
