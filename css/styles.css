@@ -1,0 +1,129 @@
+html, body { 
+  margin: 0;
+  padding: 0;
+  background-color: #1b2354;
+}
+
+.nav-bar {
+  padding-top: 30px;
+  /* border-style: solid; */
+}
+
+.logo {
+  margin-top: 20px;
+  /* border-style: solid; */
+  height: 85px;
+  width: 115px;
+}
+
+.nav-bar ul {
+  /* border-style: solid; */
+  float: right;
+  margin-top: 15px;
+  padding-right: 30px;
+  list-style: none;
+  text-align: right;
+  font-family: "Keep Calm";
+  font-size: 15px;
+  color: #9da9cf;
+}
+
+.nav-bar li {
+  padding-top: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  height: 500px;
+  padding-top: 30px;
+  /* border-style: solid; */
+}
+
+#title1 {
+  font-family: "Keep Calm";
+  font-size: 30px;
+  color: #e4eefb;
+}
+
+#title2 {
+  margin-top: 10px;
+  font-family: "Keep Calm";
+  color: #9da9cf;
+}
+
+#title3 {
+  margin-top: 40px;
+  font-family: "Amarillo";
+  color: #e8d838;
+}
+
+.birdie {
+  width: 35px;
+  height: 40px;
+}
+
+.wolverine {
+  margin-top: 30px;
+  height: 150px;
+  width: 140px;
+  /* border-style: solid; */
+}
+
+.home2 {
+  /* border-style: solid; */
+  /* height: 100vh; */
+  padding-left: 30px;
+  color: #e4eefb;
+}
+
+.home2 h1 {
+  font-family: "Keep Calm";
+  padding: 50px 50px 0 50px;
+}
+
+.box-back {
+  background-color: #40538e;
+  margin-right: 30px;
+}
+
+p {
+  font-family: "Helvetica";
+  color: #e4eefb;
+  padding: 0 50px 50px 50px;
+}
+
+.gallery1 {
+  margin-top: 100px;
+  font-family: "Keep Calm";
+  color: #9da9cf;
+  text-align: center;
+  font-size: 14px;
+  /* border-style: dotted; */
+}
+
+.team1  {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 450px;
+}
+
+.home3 {
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #40538e;
+  color: #9da9cf;
+  font-family: "Helvetica";
+}
+
+/* 
+Color Palette:
+#1b2354
+#40538e
+#9da9cf
+#e4eefb
+#e8d838
+*/
