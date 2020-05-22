@@ -33,6 +33,23 @@ html, body {
   /* border-style: solid; */
 }
 
+#nav-bar ul {
+  float: right;
+  list-style-type: none;
+  text-align: right;
+  margin-top: 0;
+}
+
+#nav-bar li {
+  margin-bottom: 5px;
+}
+
+#nav-bar a {
+  color: #e4eefb;
+  font-family: "Keep Calm";
+  text-decoration: none;
+}
+
 /* FRONT PAGE */
 #section-0 {
   background-color: #1b2354;
