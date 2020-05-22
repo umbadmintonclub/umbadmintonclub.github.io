@@ -7,3 +7,12 @@
     padding-left: 20px;
     vertical-align: 20px;
 }
+
+#tournament-0 .Title {
+    text-align: left; 
+    color: black;
+    padding-top: 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 26px;
+}
