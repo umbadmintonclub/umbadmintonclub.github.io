@@ -4,6 +4,10 @@ html, body {
   background-color: #e4eefb;
 }
 
+h1 {
+  color: white;
+}
+
 .logo {
   width: 75px;
   height: 60px;
