@@ -50,6 +50,10 @@ html, body {
   text-decoration: none;
 }
 
+#nav-bar a:hover {
+  color: #e8d838;
+}
+
 /* FRONT PAGE */
 #section-0 {
   background-color: #1b2354;
@@ -167,13 +171,37 @@ footer .logo {
 }
 
 footer form {
-  margin-top: 50px;
+  margin: 25px;
+  padding: 25px;
   text-align: center;
-  font-family:  "Keep Calm";
+  background-color: #40538e;
+}
+
+footer form h1 {
+  font-family: "Keep Calm";
+  text-decoration: underline;
+  font-size: 24px;
 }
 
 input[type=text], input[type=submit] {
   width: 100%;
+  padding: 12px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Keep Calm";
+}
+
+input[type=submit] {
+  background-color: #1b2354;
+  color: #e4eefb;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: "Helvetica";
 }
 
 /* 
