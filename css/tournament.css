@@ -15,12 +15,20 @@
     display: flex; 
     justify-content: left;
     align-items: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #tournament-0 .bg-title {
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 28px;
     margin-left: 30px;
+    margin-left: 5vw;
+    text-shadow: 2px 2px 2px black;
+    
 }
 #tournament-1 .Title {
     text-align: left; 
@@ -36,12 +44,61 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: DodgerBlue; 
+    background-color: #40538e; 
+    
 }
 
-#tournament-1 .row-1 .column {
+#tournament-1 .row-1 .column-1 {
     background-color: #f1f1f1;
     margin: 10px;
     padding: 60px;
     font-size: 30px;
+}
+
+#tournament-1 .row-1 .column-2 {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 60px;
+    font-size: 15px;
+    width: 330px;
+}
+
+#tournament-1 .row-1 .column-2 .event-info {
+    display: flex; 
+
+}
+
+#tournament-1 .row-1 .column-2 .event-info .date-box{
+    background-color: #1b2354;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+#tournament-1 .row-1 .column-2 .event-info .date-box .event-day{
+    font-size: 30px;
+    color: white;
+}
+
+#tournament-1 .row-1 .column-2 .event-info .date-box .event-month{
+    font-size: 13px;
+    color: white;
+}
+
+#tournament-1 .row-1 .column-2 .event-info .info-specifics{
+    padding: 12px;
+}
+
+#tournament-1 .row-1 .column-2 .event-info .info-specifics .event-title {
+    font-size: 20px;
+}
+
+#tournament-1 .row-1 .column-2 .event-info .info-specifics .event-time, #tournament-1 .row-1 .column-2 .event-info .info-specifics .event-location {
+    font-style: italic;
+    font-size: 12px;
+    color: #7c7c7c;
 }
