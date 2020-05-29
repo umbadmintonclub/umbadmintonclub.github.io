@@ -204,6 +204,10 @@ input[type=submit] {
   font-family: "Helvetica";
 }
 
+.foreground-bg {
+  background-color: #9da9cf;
+}
+
 /*Parallax Test*/
 .parallax {
   perspective: 1px;
