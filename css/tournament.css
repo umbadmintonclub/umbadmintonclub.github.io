@@ -8,11 +8,40 @@
     vertical-align: 20px;
 }
 
-#tournament-0 .Title {
+#tournament-0 .tournament-bg {
+    background-image:url(../images/mission1.jpg); 
+    height:90px; 
+    width: 100%;
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+}
+
+#tournament-0 .bg-title {
+    color: black;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#tournament-1 .Title {
     text-align: left; 
     color: black;
     padding-top: 20px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 10vw;
+    margin-right: 15px;
     font-size: 26px;
+}
+
+#tournament-1 .row-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: DodgerBlue; 
+}
+
+#tournament-1 .row-1 .column {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 60px;
+    font-size: 30px;
 }
