@@ -111,7 +111,7 @@ html, body {
 }
 
 .community-pics {
-  width: 75%;
+  width: 50%;
   margin: 20px 0;
   border-bottom: 10px solid #40538e;
   border-top: 10px solid #40538e
@@ -137,7 +137,7 @@ html, body {
 }
 
 .mission-pics {
-  width: 75%;
+  width: 50%;
   border-bottom: 10px solid #40538e;
   border-top: 10px solid #40538e
 }
@@ -203,6 +203,31 @@ input[type=submit] {
   padding-bottom: 25px;
   font-family: "Helvetica";
 }
+
+/*Parallax Test*/
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  height: 1000px;
+  transform: translateZ(-1px);
+  transform: translateZ(-1px) scale(2);
+}
+
+
 
 /* 
 Color Palette:
